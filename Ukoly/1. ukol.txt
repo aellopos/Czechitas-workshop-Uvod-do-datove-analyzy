@@ -1,0 +1,15 @@
+/* Zjistěte počet, průmerný počet životů (HP) a průměrný útok (Attack) všech pokémonů
+nelíbí se mi přesnost průměrů. Data zaokrouhlete na dvě desetinná místa
+sloupce vhodně česky pojmenujte */
+
+SELECT AVG(HP), 
+	AVG(Attack)
+FROM
+	Pokemon;
+
+/* Vylepšená verze */
+
+SELECT round(AVG(HP), 2) AS "Prumerne zivoty", 
+	round(AVG(Attack), 2) AS "Prumerny utok"
+FROM
+	Pokemon;
