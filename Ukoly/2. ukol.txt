@@ -1,0 +1,7 @@
+/* Využijte výsledek předchozího úkolu a spočítejte stejné metriky jako v prvním případě, ale s těmito změnami:
+Zajímají nás jenom pokemoni s útok v rozmezí 60 a 70 (včetně).
+Druhé písmeno jejich názvu je "a"
+Tento výstup rozpadněte po typech pokémonů: do výstupu přidejte type (stačí číslo)
+Výstup seřaďte podle největšího průměrného útoku */
+
+SELECT * FROM Pokemon WHERE attack BETWEEN 60 AND 70 AND name LIKE '_a%' ORDER BY attack DESC
