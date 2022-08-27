@@ -1,0 +1,5 @@
+/*Vyber všechny sloupce tabulky Sales pro ProductID se rovná 1 a seřaď výsledky sestupně dle výše Revenue.*/
+SELECT * FROM sales WHERE productid = 1 ORDER BY revenue DESC
+
+/*Zjisti rok a jméno měsíce, kdy rok je mezi 2013 a 2015 a měsíc začíná na písmeno 'J' nebo obsahuje písmeno 'a'.*/
+SELECT DISTINCT year, monthname from date WHERE (year BETWEEN '2013' and '2015') AND (monthname LIKE 'J%' or monthname LIKE '%a%')
