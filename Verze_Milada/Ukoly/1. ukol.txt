@@ -1,0 +1,13 @@
+/*Vyber následující sloupce z tabulky country a přejmenuj je.
+
+Zip - PSC
+City - Mesto
+Country - Stat
+*/
+/*delsi varianta*/
+SELECT zip AS PSC, city AS Mesto, country AS Stat FROM country
+/*kratsi varianta*/
+SELECT zip PSC, city Mesto, country Stat FROM country
+
+/*Vyber jedinečné Regiony z tabulky Country (aby tam žádný region nebyl dvakrát) a zobraz pouze první záznam.*/
+SELECT DISTINCT region FROM country LIMIT 1;
