@@ -1,0 +1,3 @@
+/*Kolik máme produktů (ProductId) v kategorii Rural (tabulka Product)? 
+Výsledný sloupec přejmenuj na ‚ProductCount‘.*/
+SELECT COUNT(ProductID) AS ProductCount FROM Product WHERE Category = 'Rural';
